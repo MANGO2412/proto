@@ -4,7 +4,7 @@ const app = express();
 const path = require('path');
 
 //settings
-app.set('port',3000)
+app.set('port',process.env.PORT || 3000)
 
 //routes
 app.use(require('./routes/routers'));
